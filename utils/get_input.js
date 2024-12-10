@@ -6,6 +6,7 @@ function getInput() {
         let sanitized = data;
         if (data.endsWith("\n"))
             sanitized = data.substring(0, data.lastIndexOf("\n"));
+        sanitized = data.replace(/\r/g, "");
         return sanitized;
     } catch (e) {
         console.error(e);
@@ -20,6 +21,7 @@ function getExample()
         let sanitized = data;
         if (data.endsWith("\n"))
             sanitized = data.substring(0, data.lastIndexOf("\n"));
+        sanitized = data.replace(/\r/g, "");
         return sanitized;
     } catch (e) {
         console.error(e);

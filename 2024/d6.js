@@ -72,7 +72,7 @@ function prepare(input, joined, dir, pos, block_x, block_y)
 }
 
 let resolved = [];
-for (let i = 14990; i < 15010; i++) {
+for (let i = 0; i < joined.length; i++) {
     console.log(i + " / " + joined.length);
     resolved.push(prepare(input, joined, dir, pos, i % line_length, Math.floor(i / line_length)));
 }
