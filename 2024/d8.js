@@ -1,7 +1,6 @@
 const { getInput, getExample } = require('../utils/get_input.js');
 const input = getInput().split(/\n/g);
 const line_length = input[0].length;
-let task1 = 0;
 
 let antennas = {}
 input.join("").split("").forEach((v, i) => {
@@ -41,5 +40,4 @@ for (k in antennas) {
         }
     }
 }
-console.log(positions);
 console.log(positions.length);
